@@ -1,5 +1,5 @@
-import { visibilityFilters } from './actions.js'
-import { ADD_TODO, REMOVE_TODO, TOGGLE_TODO, SET_VISIBILITY_FILTER } from './types.js'
+import { visibilityFilters } from '../actions'
+import { ADD_TODO, REMOVE_TODO, TOGGLE_TODO, SET_VISIBILITY_FILTER } from '../types'
 import { combineReducers } from 'redux'
 
 const initialState = {

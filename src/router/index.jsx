@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { HashRouter, Switch, Route, Redirect  } from 'react-router-dom'
-import Home from '../pages/home/home.jsx'
-import Fav from '../pages/fav/fav.jsx'
+import Home from '../pages/Home'
+import Fav from '../pages/Fav'
 
 class Routes extends Component {
     render () {
