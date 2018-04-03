@@ -1,3 +1,11 @@
-/**
- * Created by 80002755 on 2018/4/2.
- */
+import { createStore } from 'redux'
+import todoApp from './reducer.js'
+
+const initialState = {
+    visibilityFilter: '',
+    todos: []
+}
+const store = createStore(todoApp, initialState)
+
+
+export default store
