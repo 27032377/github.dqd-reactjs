@@ -3,12 +3,20 @@ import Footer from '../../components/Footer'
 import AddTodo from '../../containers/AddTodo'
 import VisibleTodoList from '../../containers/VisibleTodoList'
 
-const Home = () => (
-    <div>
-        <AddTodo/>
-        <VisibleTodoList/>
-        <Footer/>
-    </div>
-)
+class Home extends Component {
+    constructor (props) {
+        super(props)
+        this.state = {}
+    }
+    render () {
+        return (
+            <div>
+                <AddTodo/>
+                <VisibleTodoList/>
+                <Footer/>
+            </div>
+        )
+    }
+}
 
 export default Home
