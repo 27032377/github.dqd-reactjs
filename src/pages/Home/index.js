@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
+import Footer from '../../components/Footer'
+import AddTodo from '../../containers/AddTodo'
+import VisibleTodoList from '../../containers/VisibleTodoList'
 
-class Home extends Component {
-    constructor (props) {
-        super(props)
-        this.state = {}
-    }
-    render () {
-        return `welcome home~`
-    }
-}
+const Home = () => (
+    <div>
+        <AddTodo/>
+        <VisibleTodoList/>
+        <Footer/>
+    </div>
+)
 
 export default Home

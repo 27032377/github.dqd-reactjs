@@ -17,7 +17,9 @@ import { createStore } from 'redux'
 import todoApp from './reducers'
 
 const initialState = {
-    todos: [],
+    todos: [
+        {id: 1, completed: true, text: 'xxx'}
+    ],
     visibilityFilter: 'SHOW_ALL'
 }
 
