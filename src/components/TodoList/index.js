@@ -7,12 +7,13 @@ class TodoList extends Component {
         super(props)
     }
     render () {
+        let { todos, onTodoClick } = this.props
         return (
             <ul>
-                {this.props.todos.map(todo => (
+                {todos.map(todo => (
                     <Todo key={todo.id}
                           {...todo}
-                          onClick={() => this.props.onTodoClick(todo.id)}
+                          onClick={() => onTodoClick(todo.id)}
                     />
                 ))}
             </ul>

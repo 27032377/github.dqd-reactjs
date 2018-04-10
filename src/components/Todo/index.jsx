@@ -6,12 +6,13 @@ class Todo extends Component {
         super(props)
     }
     render () {
+        let { onClick, completed, text } = this.props
         return (
             <li
-                onClick={this.props.onClick}
-                style={{textDecoration: this.props.completed ? 'line-through' : 'none'}}
+                onClick={onClick}
+                style={{textDecoration: completed ? 'line-through' : 'none'}}
             >
-                {this.props.text}
+                {text}
             </li>
         )
     }

@@ -6,17 +6,19 @@ class Link extends Component {
         super(props)
     }
     render () {
-        if (this.props.active) {
-            return <span>{this.props.children}</span>
+        let { active, children, onClick } = this.props
+        console.log(children)
+        if (active) {
+            return <span>{children}</span>
         }
         return (
             <a
                 href=""
                 onClick={e => {
                     e.preventDefault()
-                    this.props.onClick()
+                    onClick()
                 }}
-            >{this.props.children}</a>
+            >{children}</a>
         )
     }
 }

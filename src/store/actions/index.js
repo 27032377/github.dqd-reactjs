@@ -31,7 +31,7 @@ export function setVisibilityFilter(filter) {
 
 // 结合react-redux实现
 
-import { ADD_TODO, SET_VISIBILITY_FILTER, TOGGLE_TODO } from '../types'
+import { ADD_TODO, SET_VISIBILITY_FILTER, TOGGLE_TODO, HEADER_ACTIVE } from '../types'
 
 let nextTodoId = 0
 export const addTodo = text => {
@@ -53,5 +53,12 @@ export const toggleTodo = id => {
     return {
         type: TOGGLE_TODO,
         id
+    }
+}
+
+export const headerActive = index => {
+    return {
+        type: HEADER_ACTIVE,
+        index
     }
 }

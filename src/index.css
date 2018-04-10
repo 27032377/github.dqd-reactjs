@@ -2,4 +2,53 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-size: 12px;
 }
+.w10 {
+  width: 10%;
+}
+.w20 {
+  width: 20%;
+}
+.w30 {
+  width: 30%;
+}
+.w40 {
+  width: 40%;
+}
+.w50 {
+  width: 50%;
+}
+.w60 {
+  width: 60%;
+}
+.w70 {
+  width: 70%;
+}
+.w80 {
+  width: 80%;
+}
+.w90 {
+  width: 90%;
+}
+.w100 {
+  width: 100%;
+}
+.br100 {
+  border-radius: 100%;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+@media screen and (min-width:320px) and (max-width:359.9px){ html{font-size:85px;} }
+@media screen and (min-width:360px) and (max-width:374.9px){ html{font-size:96px;} }
+@media screen and (min-width:375px) and (max-width:413.9px){ html{font-size:100px;} }
+@media screen and (min-width:414px) and (max-width:479.9px){ html{font-size:110px;} }
+@media screen and (min-width:480px) and (max-width:567.9px){ html{font-size:128px;} }
+@media screen and (min-width:568px) and (max-width:639.9px){ html{font-size:151px;} }
+@media screen and (min-width:640px){ html{font-size:160px;} }
