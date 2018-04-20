@@ -2,9 +2,6 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 
 class Link extends Component {
-    constructor (props) {
-        super(props)
-    }
     render () {
         let { active, children, onClick } = this.props
         console.log(children)

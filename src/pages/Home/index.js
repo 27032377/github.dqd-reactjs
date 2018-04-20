@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import MyHeader from '../../containers/HeaderActive'
+import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import AddTodo from '../../containers/AddTodo'
 import VisibleTodoList from '../../containers/VisibleTodoList'
@@ -13,7 +13,7 @@ class Home extends Component {
     render () {
         return (
             <div>
-                <MyHeader title="懂球帝" />
+                <Header title="懂球帝" />
                 <AddTodo/>
                 <VisibleTodoList/>
                 <Footer/>

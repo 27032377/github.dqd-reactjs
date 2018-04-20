@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 class Todo extends Component {
-    constructor (props) {
-        super(props)
-    }
     render () {
         let { onClick, completed, text } = this.props
         return (

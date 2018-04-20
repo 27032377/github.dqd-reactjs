@@ -12,6 +12,7 @@
     background: #fff;
     left: .1rem;
     top: .05rem;
+    border: 1px solid #fff;
 }
 .header .titleText {
     margin-left: .45rem;

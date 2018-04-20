@@ -4,9 +4,6 @@ import { addTodo } from '../../store/actions'
 import store from '../../store'
 
 class AddTodo extends Component {
-    constructor (props) {
-        super(props)
-    }
     render () {
         let input
         return (
