@@ -22,7 +22,16 @@ const initialState = {
         {id: 1, completed: true, text: 'xxx'}
     ],
     visibilityFilter: 'SHOW_ALL',
-    headerActive: '1'
+    headerActive: '1',
+    communityState: {
+        // itemName: ['直播', '头条', '热门', '视频', '中超', 'TANGO', '懂球号',
+        //     '足彩', '集锦', '深度', '问答', '闲情'
+        // ]
+        itemIndex: 1
+    },
+    shoppingState: {
+        itemIndex: 0
+    }
 }
 
 const store = createStore(todoApp, initialState, applyMiddleware(thunk))

@@ -1,24 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
-import { headerActive } from '../../store/actions'
 import headerPortrait from '../../assets/images/img/img-portrait.jpg'
 
-const mapStateToProps = state => {
-    return {
-        headerActive: state.headerActive
-    }
-}
-
-const mapDispatchToProps = dispatch => {
-    return {
-        toggleActive: index => {
-            dispatch(headerActive(index))
-        }
-    }
-}
-
-class Header extends Component {
+class HeaderCom extends Component {
     render () {
         const activeBlock = <span className="activeBlock" />
         const { headerActive, toggleActive } = this.props
@@ -44,15 +28,10 @@ class Header extends Component {
     }
 }
 
-Header.propTypes = {
+HeaderCom.propTypes = {
     title: PropTypes.string.isRequired,
     headerActive: PropTypes.string.isRequired,
     toggleActive: PropTypes.func.isRequired
 }
 
-Header = connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(Header)
-
-export default Header
+export default HeaderCom
