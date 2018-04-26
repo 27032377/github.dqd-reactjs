@@ -1,0 +1,9 @@
+.navItem {
+    padding: .06rem;
+    display: inline-block;
+}
+.nav-com {
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.nav-com::-webkit-scrollbar {width: auto;height: 0;}

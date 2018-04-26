@@ -1,0 +1,9 @@
+.Swipe_Container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    height: 1.4rem;
+}
+.Swipe_Container .itemBox {
+    display: inline-block;
+}

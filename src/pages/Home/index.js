@@ -2,11 +2,8 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import Header from '../../containers/Header'
-import Footer from '../../components/Footer'
-import AddTodo from '../../containers/AddTodo'
 import Community from '../../components/Community'
 import Shopping from '../../components/Shopping'
-import VisibleTodoList from '../../containers/VisibleTodoList'
 import './header.css'
 
 const mapStateToProps = state => {
@@ -38,9 +35,6 @@ class Home extends Component {
             <div>
                 <Header title="懂球帝" />
                 <div>{item}</div>
-                <AddTodo/>
-                <VisibleTodoList/>
-                <Footer/>
             </div>
         )
     }
