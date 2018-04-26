@@ -4,7 +4,8 @@ import PropTypes from 'prop-types'
 import Header from '../../containers/Header'
 import Community from '../../components/Community'
 import Shopping from '../../components/Shopping'
-import './header.css'
+import Footer from '../../components/Footer'
+import './home.css'
 
 const mapStateToProps = state => {
     return {
@@ -34,7 +35,9 @@ class Home extends Component {
         return (
             <div>
                 <Header title="懂球帝" />
-                <div>{item}</div>
+                {item}
+                <div className="fill-box" />
+                <Footer />
             </div>
         )
     }

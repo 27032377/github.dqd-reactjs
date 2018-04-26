@@ -3,6 +3,11 @@ import PropTypes from 'prop-types'
 import headerPortrait from '../../assets/images/img/img-portrait.jpg'
 
 class HeaderCom extends Component {
+    static propTypes = {
+        title: PropTypes.string.isRequired,
+        headerActive: PropTypes.string.isRequired,
+        toggleActive: PropTypes.func.isRequired
+    }
     render () {
         const activeBlock = <span className="activeBlock" />
         const { headerActive, toggleActive } = this.props
@@ -26,12 +31,6 @@ class HeaderCom extends Component {
             </div>
         )
     }
-}
-
-HeaderCom.propTypes = {
-    title: PropTypes.string.isRequired,
-    headerActive: PropTypes.string.isRequired,
-    toggleActive: PropTypes.func.isRequired
 }
 
 export default HeaderCom

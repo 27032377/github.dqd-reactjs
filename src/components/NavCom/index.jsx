@@ -3,6 +3,11 @@ import PropTypes from 'prop-types'
 import './NavCom.css'
 
 class NavCom extends Component {
+    static propTypes = {
+        itemIndex: PropTypes.number.isRequired,
+        itemChange: PropTypes.func.isRequired,
+        itemName: PropTypes.array.isRequired
+    }
     render () {
         let {itemIndex, itemChange, itemName} = this.props
         return (
@@ -20,12 +25,6 @@ class NavCom extends Component {
             </div>
         )
     }
-}
-
-NavCom.propTypes = {
-    itemIndex: PropTypes.number.isRequired,
-    itemChange: PropTypes.func.isRequired,
-    itemName: PropTypes.array.isRequired
 }
 
 export default NavCom

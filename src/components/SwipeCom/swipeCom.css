@@ -1,9 +1,30 @@
-.Swipe_Container {
-    overflow: hidden;
-    white-space: nowrap;
+.Swipe_Com {
+    width: 100%;
     position: relative;
-    height: 1.4rem;
 }
-.Swipe_Container .itemBox {
+.Swipe_Com .Swipe_Item {
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% {width: 0; height: 0}
+    100% {width: 100%; height: 100%}
+}
+.Swipe_Com .idot {
+    height: .06rem;
+    width: .06rem;
+    border-radius: 100%;
     display: inline-block;
+    margin: 0 .05rem;
+    background: #999;
+}
+.Swipe_Com .Idot_Box .active {
+    background: blue;
+}
+.Swipe_Com .Idot_Box {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
 }

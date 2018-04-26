@@ -45,6 +45,21 @@ body {
   display: block;
   clear: both;
 }
+.dpi {
+  display: inline-block;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.b_box {
+  box-sizing: border-box;
+}
+.c_box {
+  box-sizing: content-box;
+}
 @media screen and (min-width:320px) and (max-width:359.9px){ html{font-size:85px;} }
 @media screen and (min-width:360px) and (max-width:374.9px){ html{font-size:96px;} }
 @media screen and (min-width:375px) and (max-width:413.9px){ html{font-size:100px;} }

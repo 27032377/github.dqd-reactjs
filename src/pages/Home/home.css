@@ -42,3 +42,7 @@
     bottom: 0;
     left: 40%;
 }
+.fill-box {
+    height: .6rem;
+    width: 100%;
+}

@@ -1,0 +1,45 @@
+.News_Com {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: .1rem;
+    display: flex;
+    height: .9rem;
+}
+.News_Com .img_box {
+    display: flex;
+    align-items: center;
+}
+.News_Com .intro_box {
+    position: relative;
+}
+.News_Com .intro_top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+.News_Com .intro_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #666;
+    font-size: 10px;
+}
+.News_Com .border {
+    padding: .04rem;
+    margin: 0.02rem 0 0.02rem 0.04rem;
+    border-radius: 2px;
+    border: 1px solid;
+}
+.News_Com .topBlock {
+    border-color: red;
+    color: red;
+}
+.News_Com .deepBlock {
+    border-color: blue;
+    color: blue;
+}

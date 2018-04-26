@@ -1,63 +1,69 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 import './swipeCom.css'
 
 class SwipeCom extends Component {
     constructor (...args) {
         super(...args)
-        this.state = {
-            startX: 0,
-            endX: 0,
-            moveX: 0
-        }
+        this.state = {num: 0}
     }
-    touchStart (index, e) {
-        let lastMove = this.state.moveX
-        let startX = e.targetTouches[0].pageX - lastMove
-        this.setState({startX})
+    static propTypes = {
+        swList: PropTypes.array.isRequired,
+        distance: PropTypes.number.isRequired
     }
-    touchMove (index, e) {
-        let endX = e.targetTouches[0].pageX
-        let moveX = endX - this.state.startX
-        console.log(moveX)
-        // console.log(e.targetTouches[0], index)
-        this.setState({endX, moveX})
-        if (Math.abs(moveX) > parseInt(this.props.distance / 3)) {
-            moveX = 0 - this.props.distance * (index + 1)
-            this.setState({moveX})
-        }
+    componentWillMount () {
+        const {swList} = this.props
+        let len = swList.length
+        let num = 0
+        this.timer = setInterval(() => {
+            num++
+            if (num === len) {
+                num = 0
+            }
+            this.setState({num})
+        }, 2000)
     }
-    touchEnd (index, e) {
-        // console.log(e.targetTouches)
+    componentWillUnmount () {
+        clearInterval(this.timer)
     }
     render () {
-        const {distance, swList} = this.props
+        const {swList, distance} = this.props
         const len = swList.length
+        let idotArr = []
+        let height = parseInt(distance / 2)
+        if (len > 0) {
+            for (let i = 0; i < len; i++) {
+                let name = i === this.state.num ? 'idot active' : 'idot'
+                let item = <div
+                    className={name}
+                    key={'idot_' + i}
+                />
+                idotArr.push(item)
+            }
+        }
         return (
-            <div style={{'width': '100%'}} className="Swipe_Container">
-                <div
-                    style={{'width': distance * len,
-                        'left': this.state.moveX,
-                        'position': 'absolute'
-                    }}
-                >
-                    {len > 0 && swList.map((item, index) => {
+            <div className="Swipe_Com" style={{'height': height}}>
+                {len > 0 && swList.map((item, index) => {
+                    if (index === this.state.num) {
                         return (
-                            <div
-                                className="itemBox"
+                            <section
                                 key={'swipe_' + index}
-                                onTouchStart={this.touchStart.bind(this, index)}
-                                onTouchMove={this.touchMove.bind(this, index)}
-                                onTouchEnd={this.touchEnd.bind(this, index)}
+                                className="Swipe_Item"
                             >
                                 <img
-                                    style={{'width': distance}}
+                                    className="w100"
                                     src={item}
                                     alt={index}
                                 />
-                            </div>
+                            </section>
                         )
-                    })}
-                </div>
+                    } else {
+                        return null
+                    }
+                })}
+                <section className="Idot_Box">
+                    <div>{idotArr}</div>
+                </section>
             </div>
         )
     }
