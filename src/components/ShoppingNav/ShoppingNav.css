@@ -1,0 +1,22 @@
+.Shopping_Nav {
+
+}
+.Shopping_Nav .input_box {
+    width: 100%;
+    background: #eee;
+    text-align: center;
+    padding: 0.04rem;
+    box-sizing: border-box;
+}
+.Shopping_Nav .search {
+    width: 100%;
+}
+.Shopping_Nav .navItem {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding: .04rem 0;
+}
+.Shopping_Nav .img-box {
+    /*padding: .2rem;*/
+}

@@ -3,7 +3,12 @@ import thunk from 'redux-thunk'
 import todoApp from './reducers'
 
 const initialState = {
-    headerActive: '1',
+    headerData: {
+        headerActive: '1',
+        swi: true,
+        location: 'left',
+        title: '懂球帝'
+    },
     communityState: {
         itemIndex: 1
     },

@@ -3,20 +3,19 @@ import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import Header from '../../containers/Header'
 import Community from '../../components/Community'
+import Game from '../../components/Game'
 import Shopping from '../../components/Shopping'
-import Footer from '../../components/Footer'
 import './home.css'
 
 const mapStateToProps = state => {
     return {
-        headerActive: state.headerActive
+        headerActive: state.headerData.headerActive
     }
 }
 
 class Home extends Component {
     constructor (props) {
         super(props)
-        this.state = {}
     }
     render () {
         let {headerActive} = this.props
@@ -25,8 +24,11 @@ class Home extends Component {
             case '1':
                 item = <Community/>
                 break
-            case '3':
+            case '2':
                 item = <Shopping/>
+                break
+            case '3':
+                item = <Game/>
                 break
             default:
                 item = null
@@ -34,10 +36,8 @@ class Home extends Component {
         }
         return (
             <div>
-                <Header title="懂球帝" />
+                <Header />
                 {item}
-                <div className="fill-box" />
-                <Footer />
             </div>
         )
     }

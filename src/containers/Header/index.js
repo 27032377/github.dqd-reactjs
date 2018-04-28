@@ -3,8 +3,12 @@ import HeaderCom from '../../components/HeaderCom'
 import { headerActive } from '../../store/actions'
 
 const mapStateToProps = state => {
+    const {headerActive, swi, location, title} = state.headerData
     return {
-        headerActive: state.headerActive
+        headerActive,
+        swi,
+        location,
+        title
     }
 }
 

@@ -17,9 +17,9 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-const ShoppingNav = connect(
+const GameNav = connect(
     mapStateToProps,
     mapDispatchToProps
 )(NavCom)
 
-export default ShoppingNav
+export default GameNav

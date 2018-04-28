@@ -3,6 +3,7 @@ import CommunityNav from '../../containers/CommunityNav'
 import NewsCom from '../../components/NewsCom'
 import newsJson from '../../assets/json/news.json'
 import SwipeCom from '../../components/SwipeCom'
+import FooterHome from '../../components/FooterHome'
 import swipe01 from '../../assets/images/swipe/swipe01.jpg'
 import swipe02 from '../../assets/images/swipe/swipe02.jpg'
 import swipe03 from '../../assets/images/swipe/swipe03.jpg'
@@ -39,6 +40,8 @@ class Community extends Component {
                 <CommunityNav itemName={itemName} />
                 <SwipeCom distance={this.state.distance} swList={swList} />
                 {newsArr}
+                <div className="fill-box" />
+                <FooterHome />
             </div>
         )
     }

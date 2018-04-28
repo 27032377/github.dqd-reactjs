@@ -26,3 +26,24 @@ export const footerActive = index => {
         index
     }
 }
+
+export const headerSwi = bool => {
+    return {
+        type: types.HEADER_SWI,
+        bool
+    }
+}
+
+export const headerLocation = str => {
+    return {
+        type: types.HEADER_LOCATION,
+        str
+    }
+}
+
+export const headerTitle = str => {
+    return {
+        type: types.HEADER_TITLE,
+        str
+    }
+}

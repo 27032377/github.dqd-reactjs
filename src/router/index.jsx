@@ -1,18 +1,18 @@
 import React, {Component} from 'react'
-import { HashRouter, Switch, Route, Redirect  } from 'react-router-dom'
-import Home from '../pages/Home/index'
-import Fav from '../pages/Fav'
+import { BrowserRouter, Switch, Route, Redirect  } from 'react-router-dom'
+import Home from '../pages/Home'
+import Mall from '../pages/Mall'
 
 class Routes extends Component {
     render () {
         return (
-            <HashRouter>
+            <BrowserRouter>
                 <Switch>
                     <Route exact path='/' component={Home} />
-                    <Route path='/fav' component={Fav} />
+                    <Route path='/mall' component={Mall} />
                     <Redirect to="/" />
                 </Switch>
-            </HashRouter>
+            </BrowserRouter>
         )
     }
 }
