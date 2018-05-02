@@ -1,10 +1,10 @@
 import {connect} from 'react-redux'
 import NavCom from '../../components/NavCom'
-import {shoppingState} from '../../store/actions'
+import {changeGameItem} from '../../store/actions'
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        itemIndex: state.shoppingState.itemIndex,
+        itemIndex: state.gameState.itemIndex,
         itemName: ownProps.itemName
     }
 }
@@ -12,7 +12,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => {
     return {
         itemChange: index => {
-            dispatch(shoppingState(index))
+            dispatch(changeGameItem(index))
         }
     }
 }

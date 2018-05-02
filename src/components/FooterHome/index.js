@@ -37,9 +37,6 @@ const mapDispatchToProps = dispatch => {
 }
 
 class FooterHome extends Component {
-    constructor (...args) {
-        super(...args)
-    }
     static propTypes = {
         footerActive: PropTypes.string.isRequired,
         clickHandler: PropTypes.func.isRequired

@@ -13,9 +13,9 @@ export const communityState = index => {
     }
 }
 
-export const shoppingState = index => {
+export const changeGameItem = index => {
     return {
-        type: types.CHANGE_SHOPPING_ITEM,
+        type: types.CHANGE_GAME_ITEM,
         index
     }
 }
@@ -45,5 +45,12 @@ export const headerTitle = str => {
     return {
         type: types.HEADER_TITLE,
         str
+    }
+}
+
+export const changeShoppingActive = index => {
+    return {
+        type: types.CHANGE_SHOPPING_ACTIVE,
+        index
     }
 }

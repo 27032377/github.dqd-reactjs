@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux'
 import { FOOTER_ACTIVE } from '../types'
 import communityState from './communityState'
-import shoppingState from './shoppingState'
+import gameState from './gameState'
 import headerData from './headerData'
+import shoppingState from './shoppingState'
 
 const footerActive = (state = '', action) => {
     switch (action.type) {
@@ -15,9 +16,10 @@ const footerActive = (state = '', action) => {
 
 const todoApp = combineReducers({
     communityState,
-    shoppingState,
+    gameState,
     footerActive,
-    headerData
+    headerData,
+    shoppingState
 })
 
 export default todoApp

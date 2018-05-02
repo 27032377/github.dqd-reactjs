@@ -30,7 +30,7 @@ class SwipeCom extends Component {
         const {swList, distance} = this.props
         const len = swList.length
         let idotArr = []
-        let height = parseInt(distance / 2)
+        let height = parseInt(distance / 2, 10)
         if (len > 0) {
             for (let i = 0; i < len; i++) {
                 let name = i === this.state.num ? 'idot active' : 'idot'

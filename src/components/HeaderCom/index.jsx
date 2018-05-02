@@ -3,9 +3,6 @@ import PropTypes from 'prop-types'
 import headerPortrait from '../../assets/images/img/img-portrait.jpg'
 
 class HeaderCom extends Component {
-    constructor (...args) {
-        super(...args)
-    }
     static propTypes = {
         title: PropTypes.string.isRequired,
         headerActive: PropTypes.string.isRequired,

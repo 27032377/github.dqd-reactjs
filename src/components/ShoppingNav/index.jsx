@@ -30,7 +30,7 @@ class ShoppingNav extends Component {
             let navBlock =
                 <section className="navItem" key={'imgNav_' + index}>
                     <div className="img-box">
-                        <img className="w30" src={item.path} />
+                        <img className="w30" alt="search" src={item.path} />
                     </div>
                     <div>{item.intro}</div>
                 </section>

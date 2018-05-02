@@ -12,8 +12,11 @@ const initialState = {
     communityState: {
         itemIndex: 1
     },
-    shoppingState: {
+    gameState: {
         itemIndex: 0
+    },
+    shoppingState: {
+        active: 0
     },
     footerActive: '1'
 }

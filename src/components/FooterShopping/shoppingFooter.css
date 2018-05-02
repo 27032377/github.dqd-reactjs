@@ -1,0 +1,12 @@
+.Shopping_Footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+    padding: .1rem 0;
+    border-top: 1px solid #eee;
+}
+.Shopping_Footer .img_box {
+    padding-bottom: .04rem;
+}

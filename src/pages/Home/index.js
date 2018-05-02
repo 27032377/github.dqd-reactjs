@@ -14,8 +14,8 @@ const mapStateToProps = state => {
 }
 
 class Home extends Component {
-    constructor (props) {
-        super(props)
+    static propTypes = {
+        headerActive: PropTypes.string.isRequired
     }
     render () {
         let {headerActive} = this.props
@@ -41,10 +41,6 @@ class Home extends Component {
             </div>
         )
     }
-}
-
-Home.propTypes = {
-    headerActive: PropTypes.string.isRequired
 }
 
 Home = connect(mapStateToProps)(Home)
