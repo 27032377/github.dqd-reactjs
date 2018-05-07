@@ -10,7 +10,8 @@ const initialState = {
         title: '懂球帝'
     },
     communityState: {
-        itemIndex: 1
+        itemIndex: 1,
+        matchIndex: 1
     },
     gameState: {
         itemIndex: 0

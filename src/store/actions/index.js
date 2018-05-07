@@ -54,3 +54,10 @@ export const changeShoppingActive = index => {
         index
     }
 }
+
+export const changeMatchIndex = index => {
+    return {
+        type: types.CHANGE_MATCH_INDEX,
+        index
+    }
+}

@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import GameNav from '../../containers/GameNav'
+import GameNav from '../../containers/GameNav.jsx'
 
 class Game extends Component {
     render () {

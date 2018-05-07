@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
-import NavCom from '../../components/NavCom'
-import {changeGameItem} from '../../store/actions'
+import NavCom from '../components/NavCom'
+import {changeGameItem} from '../store/actions'
 
 const mapStateToProps = (state, ownProps) => {
     return {

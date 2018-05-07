@@ -36,3 +36,7 @@
 [0428/170616:ERROR:file_io.cc(30)] read: expected 36, observed 0
 [0502/102323:ERROR:file_io.cc(30)] read: expected 36, observed 0
 [0502/102323:ERROR:file_io.cc(30)] read: expected 36, observed 0
+[0507/143952:ERROR:file_io.cc(30)] read: expected 36, observed 0
+[0507/143952:ERROR:file_io.cc(30)] read: expected 36, observed 0
+[0507/155058:ERROR:file_io.cc(30)] read: expected 36, observed 0
+[0507/155058:ERROR:file_io.cc(30)] read: expected 36, observed 0

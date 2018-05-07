@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
-import Header from '../../containers/Header'
+import Header from '../../containers/Header.jsx'
 import Community from '../../components/Community'
 import Game from '../../components/Game'
 import Shopping from '../../components/Shopping'
