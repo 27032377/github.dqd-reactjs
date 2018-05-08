@@ -1,0 +1,23 @@
+.Vs_Com {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 0.1rem 0.2rem;
+    border-bottom: 1px solid #eeeeee;
+    box-sizing: border-box;
+}
+.Vs_Com .img-box {
+    height: .5rem;
+    margin-bottom: .1rem;
+}
+.Vs_Com .bell-box {
+    height: .3rem;
+    margin: .08rem 0;
+}
+.Vs_Com .score-box {
+    height: .45rem;
+    line-height: .45rem;
+    font-size: .24rem;
+    color: #000;
+}

@@ -1,0 +1,86 @@
+{
+  "list": [
+    {
+      "date":"2018-05-08今天",
+      "item":[
+        {
+          "host":"莱加内斯",
+          "visit":"莱万特",
+          "name":"03:00 西甲 第36轮",
+          "isFinish":true,
+          "live":"已结束",
+          "score":"0 - 3"
+        },
+        {
+          "host":"武里南联",
+          "visit":"全北现代",
+          "name":"19:00 亚冠 1/8决赛",
+          "isFinish":false,
+          "live":"直播信息待更新",
+          "score":""
+        },
+        {
+          "host":"天津权健",
+          "visit":"广州恒大淘宝",
+          "name":"19:30 亚冠 1/8决赛",
+          "isFinish":false,
+          "live":"CCTV 图文直播",
+          "score":""
+        },
+        {
+          "host":"佐布阿汉",
+          "visit":"德黑兰独立",
+          "name":"22:45 亚冠 1/8决赛",
+          "isFinish":false,
+          "live":"直播信息待更新",
+          "score":""
+        }
+      ]
+    },
+    {
+      "date":"2018-05-09明天",
+      "item":[
+        {
+          "host":"艾因",
+          "visit":"杜海勒",
+          "name":"00:10 亚冠 1/8决赛",
+          "isFinish":false,
+          "live":"直播信息待更新",
+          "score":""
+        },
+        {
+          "host":"斯旺西",
+          "visit":"南安普顿",
+          "name":"02:45 英超 第31轮",
+          "isFinish":false,
+          "live":"新英直播 QQ直播",
+          "score":""
+        },
+        {
+          "host":"莱塞比耶",
+          "visit":"巴黎圣日耳曼",
+          "name":"03:05 法国杯 决赛",
+          "isFinish":false,
+          "live":"网络直播",
+          "score":""
+        },
+        {
+          "host":"新疆雪豹纳欢",
+          "visit":"上海申鑫",
+          "name":"16:00 中甲 第10轮",
+          "isFinish":false,
+          "live":"直播信息待更新",
+          "score":""
+        },
+        {
+          "host":"蔚山现代",
+          "visit":"水原三星",
+          "name":"19:00 亚冠 1/8决赛",
+          "isFinish":false,
+          "live":"直播信息待更新",
+          "score":""
+        }
+      ]
+    }
+  ]
+}
