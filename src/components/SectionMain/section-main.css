@@ -1,0 +1,33 @@
+.Section_Main {
+    padding: .15rem .1rem 0 .1rem;
+}
+.Section_Main .til-box {
+    line-height: .2rem;
+    font-size: .16rem;
+    margin-bottom: .2rem;
+    font-weight: bold;
+    letter-spacing: .01rem;
+}
+.Section_Main .date-box {
+    color: #666;
+    font-size: .12rem;
+    margin-bottom: .2rem;
+}
+.Section_Main .c-style {
+    line-height: .2rem;
+    font-size: .14rem;
+    margin-bottom: .15rem;
+}
+.Section_Main .source-box {
+    color: #666;
+    font-size: .12rem;
+    margin-bottom: .15rem;
+}
+.Section_Main .label-item {
+    display: inline-block;
+    padding: .04rem;
+    border-radius: 2px;
+    background: #eeeeee;
+    margin-right: .05rem;
+    color: #666;
+}

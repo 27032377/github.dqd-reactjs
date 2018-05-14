@@ -1,0 +1,25 @@
+.Section_Til {
+    background: #33CC00;
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .16rem;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.Section_Til .arrow-box {
+    position: absolute;
+    left: .1rem;
+    top: .04rem;
+}
+.Section_Til .num-box {
+    position: absolute;
+    right: .1rem;
+    font-size: .12rem;
+    height: .2rem;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    top: .1rem;
+    line-height: .2rem;
+    padding: 0 .1rem;
+}

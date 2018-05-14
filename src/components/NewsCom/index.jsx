@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {withRouter} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import './newsCom.css'
 import logo from '../../assets/images/logo/logo04.png'
@@ -9,6 +10,12 @@ class NewsCom extends Component {
         author: PropTypes.string.isRequired,
         commentNum: PropTypes.number.isRequired,
         top: PropTypes.bool.isRequired
+    }
+    clickHandler () {
+        this.props.history.push({
+            pathname: '/hotsection',
+            query: {id: '123'}
+        })
     }
     render () {
         const {
@@ -21,7 +28,7 @@ class NewsCom extends Component {
         let topBlock = top ? <span className="border topBlock">置顶</span> : null
         let deepBlock = (!top && deep) ? <span className="border deepBlock">深度</span> : null
         return (
-            <div className="News_Com b_box">
+            <div className="News_Com b_box" onClick={this.clickHandler.bind(this)}>
                 <section className="w20 dpi img_box">
                     <img className="w50" src={logo} alt={author} />
                 </section>
@@ -41,4 +48,4 @@ class NewsCom extends Component {
     }
 }
 
-export default NewsCom
+export default withRouter(NewsCom)

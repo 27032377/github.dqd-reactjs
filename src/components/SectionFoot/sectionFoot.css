@@ -1,0 +1,49 @@
+.Section_Foot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: .1rem;
+    box-shadow: 0 -2px 2px #eee;
+    width: 100%;
+}
+.Section_Foot .input-box {
+    width: 55%;
+    float: left;
+}
+.Section_Foot input {
+    border: none;
+    padding: .02rem;
+    height: .2rem;
+    line-height: .2rem;
+}
+.Section_Foot input::placeholder {
+    background: #eee;
+    color: #666;
+    border-radius: 2px;
+    padding-left: .1rem;
+}
+.Section_Foot .icon-box {
+    margin-right: .2rem;
+    height: .24rem;
+    line-height: .24rem;
+    float: right;
+}
+.Section_Foot .img {
+    height: 100%;
+    margin-right: .15rem;
+}
+.Section_Foot .num {
+    position: absolute;
+    height: .12rem;
+    line-height: .12rem;
+    right: -7px;
+    top: -1px;
+    z-index: 100;
+    background: #fff;
+    color: #33CC00;
+}
+.Section_Foot .num-box {
+    position: relative;
+    display: inline-block;
+    margin-right: .15rem;
+}
